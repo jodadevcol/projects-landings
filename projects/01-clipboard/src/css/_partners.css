@@ -1,0 +1,13 @@
+.bl-partners-logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2rem;
+}
+
+.bl-partners-logo {
+  display: block;
+  padding-block: 2.4rem;
+  max-width: fit-content;
+}

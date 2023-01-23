@@ -1,0 +1,56 @@
+.bl-snippets-intro {
+  padding-block: 2rem 3.2rem;
+}
+
+.bl-snippets-title {
+  margin-block-end: 1.6rem;
+}
+
+.bl-snippets-copy {
+  text-align: center;
+}
+
+.bl-snippets-content {
+  padding-block: 3.2rem 2rem;
+}
+
+.bl-snippets-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 4.4rem;
+}
+
+.bl-snippets-content--right {
+  padding: 2rem;
+}
+
+.bl-snippets-picture {
+  max-width: 380px;
+}
+
+.bl-snippets-details {
+  padding: 0;
+  list-style: none;
+}
+
+.bl-snippets-detail {
+  padding-block: 2.4rem;
+}
+
+.bl-snippets-detail:first-of-type {
+  padding-block-start: 0;
+}
+
+.bl-snippets-detail:last-of-type {
+  padding-block-end: 0;
+}
+
+.bl-detail-title {
+  margin-block-end: 1.2rem;
+}
+
+.bl-detail-copy {
+  text-align: center;
+}

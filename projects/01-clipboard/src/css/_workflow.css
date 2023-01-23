@@ -1,0 +1,50 @@
+.bl-workflow-intro {
+  padding-block: 0 4.4rem;
+}
+
+.bl-workflow-title {
+  margin-block-end: 1.6rem;
+}
+
+.bl-workflow-content {
+  padding-block: 4.4rem 0;
+}
+
+.bl-workflow-details {
+  list-style: none;
+}
+
+.bl-workflow-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2rem;
+  padding-block: 2.8rem;
+}
+
+.bl-workflow-detail:first-of-type {
+  padding-block-start: 0;
+}
+
+.bl-workflow-detail:last-of-type {
+  padding-block-end: 0;
+}
+
+.bl-detail-icon {
+  width: 100%;
+  max-width: 44px;
+  margin-block-end: 2rem;
+  color: var(--col-grayish-blue);
+}
+
+.bl-detail-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.bl-detail-title {
+}
+
+.bl-detail-copy {
+}

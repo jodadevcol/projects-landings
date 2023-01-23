@@ -1,0 +1,19 @@
+@import url('./css/_normalize.css');
+@import url('./css/_base.css');
+@import url('./css/_intro-top.css');
+@import url('./css/_snippets.css');
+@import url('./css/_devices.css');
+@import url('./css/_workflow.css');
+@import url('./css/_partners.css');
+
+.bl-workflow-intro {
+  padding-block: 2rem 3.2rem;
+}
+
+.bl-workflow-title {
+  margin-block-end: 1.6rem;
+}
+
+.bl-workflow-copy {
+  text-align: center;
+}

@@ -1,0 +1,23 @@
+.bl-devices-intro {
+  padding-block: 3.2rem;
+}
+
+.bl-devices-title {
+  margin-block-end: 1.6rem;
+}
+
+.bl-devices-copy {
+  margin-block-end: 6.4rem;
+  text-align: center;
+}
+
+.bl-devices-picture {
+  display: block;
+  width: 100%;
+  max-height: fit-content;
+}
+
+.bl-devices-picture img {
+  width: 100%;
+  max-height: 220px;
+}

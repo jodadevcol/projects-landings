@@ -1,0 +1,128 @@
+:root {
+  /* fonts */
+  --ft-base: 'Bai Jamjuree', 'Helvetica', sans-serif;
+
+  /* colors */
+  --col-strong-cyan: #26baa4;
+  --col-light-blue: #6173ff;
+  --col-dark-grayish-blue: #4c545d;
+  --col-grayish-blue: #9fabb2;
+  --col-white: #fff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--ft-base);
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--col-dark-grayish-blue);
+  background-color: var(--col-white);
+}
+
+header,
+section,
+figure,
+aside {
+  position: relative;
+}
+
+figure,
+picture {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+h1,
+.h1 {
+  font-size: 3.2rem;
+}
+
+h2,
+.h2 {
+  font-size: 2.8rem;
+}
+
+h3,
+.h3 {
+  font-size: 2.4rem;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  margin-block: 0 2.4rem;
+  text-align: center;
+  font-family: var(--ft-base);
+  font-weight: 600;
+  color: var(--col-dark-grayish-blue);
+}
+
+p {
+  font-family: var(--ft-base);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.65;
+  letter-spacing: 0.2px;
+  color: var(--col-grayish-blue);
+}
+
+a {
+  text-decoration: none;
+  color: var(--col-dark-grayish-blue);
+}
+
+/* layout */
+.bl-section {
+  margin-block: 6rem;
+  padding-block: 4rem;
+}
+
+.wrapper {
+  max-width: 90%;
+  margin-inline: auto;
+  padding-inline: 4vw;
+}
+
+/* btn */
+.cta--default {
+  position: relative;
+  width: fit-content;
+  min-width: 180px;
+  padding-block: 1.2rem;
+  padding-inline: 4.4rem;
+  font-family: var(--ft-base);
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.7;
+  border: none;
+  outline: none;
+  border-radius: 28px;
+  color: var(--col-white);
+}
+
+.cta--default.cta--cyan {
+  background-color: var(--col-strong-cyan);
+  box-shadow: 0px 10px 20px rgba(137, 229, 199, 0.4), inset 0px -3px 0px rgba(0, 0, 0, 0.15);
+}
+
+.cta--default.cta--blue {
+  background-color: var(--col-light-blue);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1), inset 0px -3px 0px 0px rgba(0, 0, 0, 0.15);
+}
