@@ -6,7 +6,7 @@
   --col-strong-cyan: #26baa4;
   --col-light-blue: #6173ff;
   --col-dark-grayish-blue: #4c545d;
-  --col-grayish-blue: #9fabb2;
+  --col-grayish-blue: #9eabb2;
   --col-white: #fff;
 }
 
@@ -103,6 +103,7 @@ a {
 /* btn */
 .cta--default {
   position: relative;
+  display: block;
   width: fit-content;
   min-width: 180px;
   padding-block: 1.2rem;
@@ -125,4 +126,15 @@ a {
 .cta--default.cta--blue {
   background-color: var(--col-light-blue);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1), inset 0px -3px 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+.hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }

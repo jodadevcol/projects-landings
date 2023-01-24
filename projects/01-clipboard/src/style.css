@@ -5,15 +5,5 @@
 @import url('./css/_devices.css');
 @import url('./css/_workflow.css');
 @import url('./css/_partners.css');
-
-.bl-workflow-intro {
-  padding-block: 2rem 3.2rem;
-}
-
-.bl-workflow-title {
-  margin-block-end: 1.6rem;
-}
-
-.bl-workflow-copy {
-  text-align: center;
-}
+@import url('./css/_download.css');
+@import url('./css/_footer.css');
