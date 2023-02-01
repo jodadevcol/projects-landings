@@ -1,13 +1,15 @@
 .bl-partners-logos {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  row-gap: 2rem;
+  column-gap: 24px;
+  row-gap: 1.2rem;
 }
 
 .bl-partners-logo {
   display: block;
   padding-block: 2.4rem;
+  padding-inline: 24px;
   max-width: fit-content;
 }

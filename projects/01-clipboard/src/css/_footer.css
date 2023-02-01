@@ -53,3 +53,12 @@
   max-width: 24px;
   margin-inline: auto;
 }
+
+.bl-footer-bottom {
+  padding-block: 0.8rem;
+}
+
+.bl-footer-bottom .attribution {
+  text-align: center;
+  font-size: 1.2rem;
+}

@@ -14,9 +14,16 @@
   max-height: 370px;
   background-image: url(./../assets/images/bg-header-mobile.png);
   background-size: 100% auto;
-  background-position: top center;
+  background-position: bottom;
   background-repeat: repeat-x;
   pointer-events: none;
+}
+
+@media screen and (min-width: 740px) {
+  .intro-top::before {
+    max-height: 440px;
+    background-image: url(./../assets/images/bg-header-desktop.png);
+  }
 }
 
 .intro-top-wrapper {
@@ -33,6 +40,12 @@
   min-height: 36vh;
 }
 
+@media screen and (min-width: 740px) {
+  .intro-top-picture {
+    min-height: 30vh;
+  }
+}
+
 .intro-top-picture img {
   max-width: 125px;
   max-height: 125px;
@@ -44,8 +57,28 @@
   text-align: center;
 }
 
+@media screen and (min-width: 740px) {
+  .intro-top-uvp {
+    max-width: 720px;
+  }
+}
+
 .intro-top-title {
   margin-block-end: 1.6rem;
+}
+
+@media screen and (min-width: 740px) {
+  .intro-top-copy {
+    max-width: 55ch;
+    margin-inline: auto;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .intro-top-copy {
+    font-size: 2rem;
+  }
 }
 
 .intro-top-ctas {
@@ -53,13 +86,26 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  column-gap: 2rem;
   row-gap: 2.4rem;
   max-width: 400px;
   margin-inline: auto;
   margin-block-start: 4.8rem;
 }
 
+@media screen and (min-width: 740px) {
+  .intro-top-ctas {
+    max-width: 100%;
+  }
+}
+
 .intro-top-cta {
   width: 100%;
   max-width: 90%;
+}
+
+@media screen and (min-width: 740px) {
+  .intro-top-cta {
+    max-width: fit-content;
+  }
 }
