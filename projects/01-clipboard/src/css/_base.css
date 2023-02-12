@@ -137,6 +137,12 @@ a {
   outline: none;
   border-radius: 28px;
   color: var(--col-white);
+  will-change: auto;
+  transition: opacity 400ms ease-in-out;
+}
+
+.cta--default:hover {
+  opacity: 0.8;
 }
 
 .cta--default.cta--cyan {

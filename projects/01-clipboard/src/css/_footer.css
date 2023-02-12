@@ -3,12 +3,38 @@
   background-color: rgba(158, 171, 178, 0.1);
 }
 
+@media screen and (min-width: 1040px) {
+  .bl-footer-top {
+    padding-block: 4.4rem;
+  }
+}
+
+.bl-footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1040px) {
+  .bl-footer-content {
+    display: grid;
+    grid-template-columns: minmax(60px, 280px) repeat(2, 1fr);
+  }
+}
+
 .bl-footer-picture {
   display: block;
   max-width: 55px;
   max-height: 55px;
   margin-block-end: 4rem;
   margin-inline: auto;
+}
+
+@media screen and (min-width: 1040px) {
+  .bl-footer-picture {
+    margin-block-end: 0;
+  }
 }
 
 .bl-footer-items {
@@ -20,6 +46,15 @@
   margin-block-end: 4.4rem;
 }
 
+@media screen and (min-width: 1040px) {
+  .bl-footer-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 0.8rem;
+    margin-block-end: 0;
+  }
+}
+
 .bl-footer-item {
   margin-block-end: 2rem;
   font-size: 1.8rem;
@@ -27,12 +62,46 @@
   line-height: 1.7;
 }
 
+@media screen and (min-width: 1040px) {
+  .bl-footer-item {
+    margin-block-end: 0;
+  }
+}
+
 .bl-footer-item:last-of-type {
   margin-block-end: 0;
 }
 
 .bl-footer-link {
+  position: relative;
+  display: block;
+  width: fit-content;
   color: inherit;
+  will-change: auto;
+  transition: color 380ms ease-in-out;
+}
+
+.bl-footer-link::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: currentColor;
+  opacity: 0.8;
+  transform-origin: left;
+  transform: scaleX(0);
+  will-change: auto;
+  transition: transform 420ms linear;
+}
+
+.bl-footer-link:hover {
+  color: var(--col-strong-cyan);
+}
+
+.bl-footer-link:hover::before {
+  transform: scaleX(1);
 }
 
 .bl-footer-socials {
@@ -40,6 +109,7 @@
   align-items: center;
   justify-content: center;
   column-gap: 2rem;
+  width: 100%;
 }
 
 .bl-footer-social {
@@ -52,6 +122,12 @@
   display: block;
   max-width: 24px;
   margin-inline: auto;
+  will-change: auto;
+  transition: color 380ms ease-in-out;
+}
+
+.bl-footer-social-link:hover {
+  color: var(--col-strong-cyan);
 }
 
 .bl-footer-bottom {

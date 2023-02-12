@@ -1,7 +1,7 @@
 .intro-top {
   height: fit-content;
   margin-block-end: 4rem;
-  padding-block: 4rem;
+  padding-block: 0 4rem;
 }
 
 .intro-top::before {
@@ -23,6 +23,7 @@
   .intro-top::before {
     max-height: 440px;
     background-image: url(./../assets/images/bg-header-desktop.png);
+    background-position: top;
   }
 }
 

@@ -1,3 +1,9 @@
+@media screen and (min-width: 820px) {
+  .bl-download {
+    margin-block-end: 15rem;
+  }
+}
+
 .bl-download-intro {
   text-align: center;
 }
@@ -11,13 +17,26 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  column-gap: 2rem;
   row-gap: 2.4rem;
   max-width: 400px;
   margin-inline: auto;
   margin-block-start: 4.8rem;
 }
 
+@media screen and (min-width: 640px) {
+  .bl-download-ctas {
+    max-width: 90%;
+  }
+}
+
 .bl-download-cta {
   width: 100%;
   max-width: 90%;
+}
+
+@media screen and (min-width: 640px) {
+  .bl-download-cta {
+    max-width: fit-content;
+  }
 }
