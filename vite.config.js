@@ -7,6 +7,7 @@ const outDir = resolve(__dirname, 'dist')
 /** @type {import('vite').UserConfig} */
 export default defineConfig({
   root,
+  base: '/projects-landings/',
   build: {
     outDir,
     emptyOutDir: true,
