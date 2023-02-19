@@ -4,6 +4,18 @@
   padding-block: 0 4rem;
 }
 
+@media screen and (min-width: 740px) {
+  .intro-top {
+    padding-block: 4rem;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .intro-top {
+    padding-block: 12rem 4rem;
+  }
+}
+
 .intro-top::before {
   content: '';
   position: absolute;
